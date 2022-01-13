@@ -4,7 +4,8 @@ i = 0
 
 while True:
 
-    num = open('Content/Created.txt', 'w')
+    num = open('Content/Created', 'w')
+    num.truncate(0)
     num.write(str(i))
     num.close()
 
