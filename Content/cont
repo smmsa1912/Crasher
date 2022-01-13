@@ -1,7 +1,7 @@
 import os
 
 
-num = open('Content/Created.txt', 'r+')
+num = open('Content/Created', 'r+')
 
 while True:
     global i
@@ -20,7 +20,7 @@ while True:
     os.startfile(f"hack_{i}.py")
     print('Hacked!!!')
 
-    num = open('Content/Created.txt', 'w')
+    num = open('Content/Created', 'w')
     num.truncate(0)
     num.write(str(bak))
 
